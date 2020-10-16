@@ -1,0 +1,53 @@
+<!--pages/lsp/lsp.wxml-->
+<import src ="/pages/template/cooks.wxml"/>
+<view class ="content">
+  <view class ="img">
+      <image src="/resource/images/05.jpg"  mode="aspectFit" style ="width:100%;height:150px;"></image> 
+  </view>
+
+<view class="nav">
+    <view class="nav-item">
+      <view>
+        <image src="/resource/images/yh.png" style="width:25px;height:23px;"></image>
+      </view>
+      <view>多宝六花</view>
+    </view>
+    <view class="nav-item">
+      <view>
+        <image src="/resource/images/yh.png" style="width:25px;height:23px;"></image>
+      </view>
+      <view>新条茜</view>
+    </view>
+    <view class="nav-item">
+      <view>
+        <image src="/resource/images/yh.png" style="width:25px;height:23px;"></image>
+      </view>
+      <view>亚丝娜</view>
+    </view>
+    <view class="nav-item">
+      <view>
+        <image src="/resource/images/yh.png" style="width:25px;height:23px;"></image>
+      </view>
+      <view>哎</view>
+    </view>
+  </view>
+  <view class ="hr"> </view>
+
+
+  <view class="head">
+	  <view>多寶</view>
+	  <view class="right">
+		  >
+    </view>
+  </view>
+
+   <view class ="list" > 
+    <block wx:for="{{array}}" wx:key="item.id">
+      <template is="cooks" data="{{item}}"></template>
+    </block>
+      
+    </view>
+
+
+</view>
+

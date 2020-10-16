@@ -1,0 +1,40 @@
+{
+  "pages": [
+   "pages/lsp/lsp",
+   "pages/xsp/xsp",
+   "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ED5757",
+    "navigationBarTitleText": "lsp",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#D53E37",
+    "backgroundColor": "#f5f5f5",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/lsp/lsp",
+        "text": "lsp",
+        "iconPath": "/resource/images/lsp-s.png",
+        "selectedIconPath": "/resource/images/lsp.png"
+      },
+      {
+        "pagePath": "pages/xsp/xsp",
+        "text": "xsp",
+        "iconPath": "/resource/images/xsp.png",
+        "selectedIconPath": "/resource/images/xsp-s.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我",
+        "iconPath": "/resource/images/me.png",
+        "selectedIconPath": "/resource/images/me-s.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "debug": true
+}
