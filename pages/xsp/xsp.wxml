@@ -1,2 +1,14 @@
 <!--pages/xsp/xsp.wxml-->
-<text>pages/xsp/xsp.wxml</text>
+<!-- <view class="section">
+  <view class="section_title">新闻频道横向滚动</view>
+  <scroll-view scroll-x="true" style="width:100%;">
+    <view style="display:flex;flex-direction:row">
+      <view style="margin-right:10px;">推荐</view>
+      <view style="margin-right:10px;">视频</view>
+      <view style="margin-right:10px;">热点</view>
+    </view>  
+    </scroll-view>
+</view> -->
+
+
+

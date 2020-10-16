@@ -5,7 +5,19 @@ Page({
    * 页面的初始数据
    */
   data:{
-     array:[] 
+     array:[],
+     lb:{
+      indicatorDots:true,
+      autoplay:true,
+      interval:3000,
+      duration:1000,
+      imgUrls:[
+        "/resource/images/lb-01.jpg",
+        "/resource/images/lb-02.jpg",
+        "/resource/images/lb-03.jpg",
+        "/resource/images/lb-04.jpg"
+      ]
+     } 
     }, 
   /**
    * 生命周期函数--监听页面加载
