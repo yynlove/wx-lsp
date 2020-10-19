@@ -13,7 +13,6 @@ Page({
       duration:1000,
       imgUrls:[
         "/resource/images/lb-01.jpg",
-        "/resource/images/lb-02.jpg",
         "/resource/images/lb-03.jpg",
         "/resource/images/lb-04.jpg"
       ]
@@ -55,7 +54,7 @@ Page({
     object3.type  ='新条茜'; 
     object3.liulan ='20696浏览'; 
     object3.pinglun ='83评论';
-    object3.id = 1; 
+    object3.id = 2; 
     array[2] = object3;
 
     var object3 = new Object(); 
@@ -64,7 +63,7 @@ Page({
     object3.type  ='新条茜'; 
     object3.liulan ='20696浏览'; 
     object3.pinglun ='83评论';
-    object3.id = 1; 
+    object3.id = 3; 
     array[3] = object3;
 
     var object4 = new Object(); 
@@ -73,7 +72,7 @@ Page({
     object4.type  ='新条茜'; 
     object4.liulan ='20696浏览'; 
     object4.pinglun ='83评论';
-    object4.id = 1; 
+    object4.id = 4; 
     array[4] = object4;
 
     return array;

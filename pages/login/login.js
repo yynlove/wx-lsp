@@ -1,43 +1,46 @@
-// pages/me/me.js
+// pages/login/login.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    currentTab: 0,
-    winWidth: 0, 
-    winHeight: 0
+     disabled:true,
+     btnstate:"default", 
+     account:"", 
+     password:""
+
   },
+
+  accountInput:function( e){ 
+    var content = e.detail.value; 
+    console.log( content); 
+    if( content !=''){ 
+      this.setData({ disabled:false, btnstate:"primary", account:content});
+    } else{ 
+      this.setData({ disabled:true, btnstate:"default"}); 
+    } 
+  },
+
+  pwdBlur:function( e){
+    var password = e.detail.value; 
+    if( password !=''){ 
+      this.setData({password:password}); 
+    } 
+  }, 
+  
+  login:function(e){
+    console.log("登录："+this.data.account+"-"+this.data.password);
+  },
+
+
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var page = this; 
-    wx.getSystemInfo({ success:function( res){ 
-      console.log( res); 
-      page.setData({ winWidth:res.windowWidth}); 
-      page.setData({ winHeight:res.windowHeight});
-    }
-  });
+
   },
-
-
-  switchNav:function(e){ 
-    var page = this; 
-    if( this.data.currentTab == e.target.dataset.current){ 
-      return false; 
-    }else{ 
-      page.setData({ currentTab:e.target.dataset.current}); 
-    } 
-  },
-
-
-
-
-
-
 
   /**
    * 生命周期函数--监听页面初次渲染完成

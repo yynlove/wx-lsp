@@ -1,14 +1,14 @@
 <!--pages/xsp/xsp.wxml-->
+<!-- 滑动块 -->
 <!-- <view class="section">
-  <view class="section_title">新闻频道横向滚动</view>
-  <scroll-view scroll-x="true" style="width:100%;">
-    <view style="display:flex;flex-direction:row">
-      <view style="margin-right:10px;">推荐</view>
-      <view style="margin-right:10px;">视频</view>
-      <view style="margin-right:10px;">热点</view>
-    </view>  
-    </scroll-view>
-</view> -->
+  <movable-area style="height:200px;width:100%;background:yellow;">
+    <movable-view style="height:50px;width:50px;background:red;"x="{{x}}"y="{{y}}"direction="all">
+
+    </movable-view>
+  </movable-area>
+</view>   -->
+
+
 
 
 

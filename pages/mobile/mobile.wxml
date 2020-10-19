@@ -1,0 +1,37 @@
+<!--pages/login/mobile/mobile.wxml-->
+<form bindsubmit ="formSubmit" bindreset ="formReset">
+  <view class="content">
+    <view class="hr"></view>
+
+    <view class="item">
+			<input name="account" model:value="{{account}}" placeholder="请输入账户"  placeholder-style="color:#999999;" placeholder-class="holder"/>
+    </view>
+    <view class="item">
+			<input  name="password" model:value="{{password}}" placeholder="请输入密码" password placeholder-style="color:#999999;" placeholder-class="holder"/>
+    </view>
+   <!-- <view class="item">
+			<input  bindinput="inputCheckPassword()" placeholder="请重复输入密码" password placeholder-style="color:#999999;"/>
+    </view>  -->
+    <!-- <view wx:if="{{!checkPasswordSuc}}"><text>两次输入密码不一致</text> </view> -->
+
+
+    <view class="mobileInfo">
+      <view class="mobilepref">+86</view>
+      <view class="mobile">
+        <input id="mobile" type="text" name="mobile" model:value="{{mobile}}" bindinput="inputedit" placeholder="请输入手机号"  placeholder-class="holder"/>
+      </view>
+      <view class="code">发送验证码</view>
+    </view>
+
+    <view class="item">
+      <input  type="text" name="code" bindinput="inputedit"  model:value="{{code}}"  placeholder="短信验证码" placeholder-class="holder"/>
+    </view>
+
+    
+
+    <button class ="btn" disabled ="{{disabled}}" type ="{{btnstate}}" form-type ="submit" > 注 册</button>
+    
+  </view>
+
+</form>
+

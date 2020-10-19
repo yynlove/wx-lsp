@@ -2,7 +2,9 @@
   "pages": [
    "pages/lsp/lsp",
    "pages/xsp/xsp",
-   "pages/me/me"
+   "pages/me/me",
+   "pages/login/login",
+   "pages/mobile/mobile"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -28,7 +30,7 @@
         "selectedIconPath": "/resource/images/xsp-s.png"
       },
       {
-        "pagePath": "pages/me/me",
+        "pagePath": "pages/login/login",
         "text": "我",
         "iconPath": "/resource/images/me.png",
         "selectedIconPath": "/resource/images/me-s.png"
